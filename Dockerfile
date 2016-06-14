@@ -13,7 +13,12 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         php5-json \
         php5-mongo \
         imagemagick \
-        wkhtmltopdf && \
+        libpng12-0 \
+        libpng12-dev \
+        libjpeg62-turbo \
+        libjpeg62-turbo-dev \
+        wkhtmltopdf \
+        xvfb && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
