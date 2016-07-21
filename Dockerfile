@@ -22,6 +22,4 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD config/supervisor/conf.d/app-log.conf /etc/supervisor/conf.d/app-log.conf
-
 RUN chgrp www-data -R /tmp && chmod g+rwx -R /tmp
