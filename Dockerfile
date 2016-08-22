@@ -2,8 +2,6 @@ FROM kitpages/symfony
 MAINTAINER Kitpages <system@kitpages.fr>
 
 RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -y \
-        make \
-        git \
         php5-gd \
         php5-mysql \
         php5-xmlrpc \
@@ -18,7 +16,8 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         libjpeg62-turbo \
         libjpeg62-turbo-dev \
         wkhtmltopdf \
-        xvfb && \
+        xvfb \
+        pdftk && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
