@@ -1,5 +1,5 @@
 FROM kitpages/symfony
-MAINTAINER Kitpages <system@kitpages.fr>
+MAINTAINER Kitpages <system@kibatic.com>
 
 RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -y \
         php5-gd \
