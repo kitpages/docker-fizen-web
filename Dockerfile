@@ -1,4 +1,4 @@
-FROM kitpages/symfony
+FROM kibatic/symfony:5.6
 MAINTAINER Kitpages <system@kibatic.com>
 
 RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -y \
