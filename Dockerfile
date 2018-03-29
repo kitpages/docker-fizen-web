@@ -10,6 +10,7 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         php5-mcrypt \
         php5-json \
         php5-mongo \
+        php5-apcu \
         imagemagick \
         libpng12-0 \
         libpng12-dev \
