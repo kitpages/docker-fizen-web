@@ -12,6 +12,7 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         php7.2-json \
         php7.2-mongo \
         php7.2-apcu \
+        php7.2-bcmath \
         imagemagick \
         libpng-dev \
         libjpeg62-turbo \
